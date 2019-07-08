@@ -17,7 +17,7 @@ let business = {
 class Business extends React.Component {
   render() {
     return (
-      <div class="Business">
+      <div className="Business">
         <div className="image-container">
           <img src={business.this.imageSrc} />
         </div>
