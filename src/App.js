@@ -1,9 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import BusinessList from "../components/BusinessList";
-import SearchBar from "../components/SearchBar";
-
+import BusinessList from "../src/components/BusinessList/BusinessList";
+import SearchBar from "../src/components/SearchBar/SearchBar";
 function App() {
   return (
     <div className="App">
@@ -13,5 +12,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
