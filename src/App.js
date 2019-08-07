@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import BusinessList from "../src/components/BusinessList/BusinessList";
 import SearchBar from "../src/components/SearchBar/SearchBar";
+import Yelp from "./util/Yelp";
+//import Yelp from "./util/Yelp";
 
 let business = {
   imageSrc:
@@ -19,8 +21,19 @@ let business = {
 const businesses = [business, business, business, business, business, business];
 
 class App extends React.Component {
+  /* constructor(){
+   this.state = {
+     businesses = []
+    }
+    this.searchYelp = this.searchYelp.bind(this)
+  } */
   searchYelp(term, location, sortBy) {
     console.log(`Searching Yelp with ${term},${location},${sortBy}`);
+    /*  Yelp.search(term,location,sortBy).then((businesses)=>{
+this.setState({
+  businesses: businesses
+})
+  }) */
   }
   render() {
     return (
